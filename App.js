@@ -31,7 +31,6 @@ function GaloScreen() {
     null, null, null
   ])
   
-  //FUNÇÃO PARA RECEBER POSIÇÃO DO USER/ADVERSARIO
   const markPosition = (position) => {
     if(!markers[position]){
       let temp = [...markers]
@@ -47,7 +46,6 @@ function GaloScreen() {
     }
   }
   
-  // LIMPAR O ECRA
   const resetMarkers = () => {
     setMarkers([
       null, null, null,
@@ -57,7 +55,6 @@ function GaloScreen() {
     plays.nr = 1
   }
 
-  //VER QUEM É QUE VENCEU
   const calculateWinner = (squares) => {
     const lines = [
       [0,1,2],
